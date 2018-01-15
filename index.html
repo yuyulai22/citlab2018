@@ -1,31 +1,121 @@
 <!DOCTYPE html>
-<!-- this is a comment, the start with !-- and ends with -- the tag above tells the browser to use HTML5 -->
 <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-    <head>
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    padding-top: 220px;
+  }
 
-        <title>
-            My first git
-        </title>
-    </head>
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      
+  }
+  p{
+    font-size: 20px;
+  }
+
+  .column1 {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 700px; 
+      border: solid;
+      margin-top: 60px;
+      background: url("https://media.istockphoto.com/vectors/air-travel-around-the-earth-sketch-vector-id499976548");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.5;
+      margin-bottom: 60px;
+
+  }
+
+.column2 {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 700px; /* Should be removed. Only for demonstration */
+      border: solid;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background: url("https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_1280.jpg");
+
+  }
+
+  .column3 {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 700px; /* Should be removed. Only for demonstration */
+      border: solid;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background: url("https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_1280.jpg");
+
+  }
+
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  #im1{
+    height: 200px;
+    width: 500px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column1">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 style = "font-color: black">Yuyu Lai</h2>
     
-    <body>
-        
-        Welcome to my page
-        <div></div>
-        
-        <p></p>
- 
-        
-        <br/>
-        
-
-        
-        <a href='link_to_go_to'>data that can be tunneled to another networked location (that's why it's called a link!)</a>
-        
-        <img src='link_to_img' />
+    <p> Hi! My name is Yuyu and I was born on September 22nd 1997. When I was one, my family and I moved to Dundee, Scotland where we lived for a few years. But for the most part, I grew up in Surrey BC. After graduating from high school, I went to McGill for university. I was in the science program for 2 years before transferring to BCIT.
 
 
+    </p>
 
-    </body>
+  </div>
+  <div class="column2">
+   
+      <br>
+      <br>
+
+      <img src = "https://i.imgur.com/6HR3GV0.jpg"  width ="350" height ="200"/>
+      <p> My friends and I having a picnic</p>
+      
+      <img src = "https://i.imgur.com/RnCMZTV.jpg"  width ="350" height ="200"/>
+      <p> At my friend's debut. </p>
+    
+  </div>
+
+  <div class="column3">
+      <p> Me at the light festival a few weeks back.</p>
+      <img src = "https://i.imgur.com/HwOKnZX.jpg" width = "150" height = "150" />
+
+      <img src = "https://i.imgur.com/DVCJEWp.jpg" width = "350" height = "350" />
+      <p> Taking a picture with zuchinnis of various shapes. </p>
+
+
+
+  </div>
+</div>
+
+</body>
 </html>
